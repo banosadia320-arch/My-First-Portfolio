@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadia Ali | Creative Web & UI/UX Designer</title>
+  <link rel="preconnect" href="https://googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar & Custom Cursor -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Ambient Glows -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <!-- Header / Navbar -->
+  <header id="navbar">
+    <a href="#home" class="logo">Sadia<span>.</span></a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="status-pill">
+        <span class="pulse-dot"></span> Available for Freelance Projects
+      </div>
+
+      <p class="intro-text">Hi, I am</p>
+      <h1 class="hero-name">Sadia Ali</h1>
+      <h2 class="hero-role"><span id="typedRole">Creative Web Designer</span><span class="caret">|</span></h2>
+
+      <p class="hero-desc">
+        I am a creative designer who creates beautiful, modern and user-friendly digital experiences that elevate brands and engage users.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <a href="#portfolio" class="btn btn-outline">Explore Work</a>
+        <button class="btn btn-ghost" onclick="triggerToast('Downloading Sadia Ali CV...')">Download CV ↓</button>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3 class="counter" data-target="5">0+</h3>
+          <p>Experiences</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="counter" data-target="20">0+</h3>
+          <p>Projects Done</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="counter" data-target="80">0+</h3>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="profile-frame tilt-card">
+        <div class="profile-placeholder">
+          <!-- Apni image lagane ke liye neeche wali line uncomment karein -->
+          <!-- <img src="profile.jpg" alt="Sadia Ali" /> -->
+          <div class="avatar-icon">SA</div>
+          <h4>Sadia Ali</h4>
+          <p>My Profile Picture</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="reveal">
+    <div class="section-heading">
+      <span class="badge">About Me</span>
+      <h2>Crafting Digital Beauty With Purpose</h2>
+      <p>Hello! I am a creative and passionate designer. I love creating modern websites and attractive user interfaces.</p>
+    </div>
+
+    <div class="about-wrapper">
+      <div class="about-text">
+        <h3>Why Work With Me?</h3>
+        <p>
+          I combine clean visual aesthetics with user-centered thinking. Whether you need a high-converting website, a mobile app interface, or a complete brand identity, I deliver modern designs tailored to your audience.
+        </p>
+        <div class="about-tags">
+          <span>✔ Pixel-Perfect UI</span>
+          <span>✔ 100% Responsive</span>
+          <span>✔ Fast Delivery</span>
+        </div>
+      </div>
+
+      <div class="skills-panel">
+        <div class="skill-bar">
+          <div class="skill-info"><span>UI/UX Design</span><span>95%</span></div>
+          <div class="bar-bg"><div class="bar-fill" data-width="95%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Web Design (HTML / CSS / JS)</span><span>92%</span></div>
+          <div class="bar-bg"><div class="bar-fill" data-width="92%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Graphic & Brand Design</span><span>90%</span></div>
+          <div class="bar-bg"><div class="bar-fill" data-width="90%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="reveal">
+    <div class="section-heading">
+      <span class="badge">My Services</span>
+      <h2>Solutions I Provide</h2>
+      <p>Specialized creative services designed to make your brand stand out.</p>
+    </div>
+
+    <div class="cards-grid">
+      <div class="service-card tilt-card">
+        <div class="icon-box">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Creating beautiful and user-friendly designs, wireframes, and interactive prototypes for web and mobile apps.</p>
+      </div>
+
+      <div class="service-card tilt-card">
+        <div class="icon-box">💻</div>
+        <h3>Web Design</h3>
+        <p>Designing modern and responsive websites with clean layouts, smooth animations, and strong visual hierarchy.</p>
+      </div>
+
+      <div class="service-card tilt-card">
+        <div class="icon-box">✨</div>
+        <h3>Graphic Design</h3>
+        <p>Creating attractive visual designs, brand identities, logos, and engaging social media creatives.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="reveal">
+    <div class="section-heading">
+      <span class="badge">My Portfolio</span>
+      <h2>Recent Creative Work</h2>
+      <p>Welcome to my portfolio. Here you can explore my creative work and projects.</p>
+    </div>
+
+    <div class="filter-tabs">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="uiux">UI/UX Design</button>
+      <button class="tab-btn" data-filter="web">Web Design</button>
+      <button class="tab-btn" data-filter="graphic">Graphic Design</button>
+    </div>
+
+    <div class="cards-grid">
+      <div class="project-card tilt-card" data-category="uiux" onclick="openProject('E-Commerce Mobile App UI', 'UI/UX Design', 'A clean and user-friendly shopping app interface with smooth navigation, wishlist flow, and modern checkout screens.')">
+        <div class="project-banner grad-1">
+          <span>UI/UX Design</span>
+        </div>
+        <div class="project-details">
+          <h3>E-Commerce Mobile App UI</h3>
+          <p>Modern shopping experience focused on usability and clean aesthetics.</p>
+          <span class="learn-more">Inspect Project →</span>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card" data-category="web" onclick="openProject('Modern Creative Agency Website', 'Web Design', 'A fully responsive multi-section agency website featuring interactive cards, smooth scrolling, and bold typography.')">
+        <div class="project-banner grad-2">
+          <span>Web Design</span>
+        </div>
+        <div class="project-details">
+          <h3>Modern Creative Agency Website</h3>
+          <p>Responsive web layout built for speed, clarity, and high conversion.</p>
+          <span class="learn-more">Inspect Project →</span>
+        </div>
+      </div>
+
+      
+        <div class="project-banner grad-3">
+          <span>Graphic Design</span>
+        </div>
+        <div class="project-details">
+          <h3>Luxury Brand Visual Identity</h3>
+          <p>Cohesive visual identity and branding graphics for a modern lifestyle brand.</p>
+          <span class="learn-more">Inspect Project →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="reveal">
+    <div class="section-heading">
+      <span class="badge">Contact Me</span>
+      <h2>Let's Work Together</h2>
+      <p>Have a project or idea? Send me a message or reach out directly.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p class="contact-sub">Feel free to contact me via email, phone, or WhatsApp.</p>
+
+        <div class="info-box">
+          <div>
+            <small>Email</small>
+            <strong>banosadia@gmail.com</strong>
+          </div>
+          <button class="copy-pill" onclick="copyValue('banosadia@gmail.com')">Copy</button>
+        </div>
+
+        <div class="info-box">
+          <div>
+            <small>Phone</small>
+            <strong>03296809049</strong>
+          </div>
+          <button class="copy-pill" onclick="copyValue('03296809049')">Copy</button>
+        </div>
+
+        <a href="https://wa.me" target="_blank" class="btn btn-outline full-width">
+          Chat on WhatsApp ↗
+        </a>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="senderName" placeholder="Your Name" required />
+        <input type="email" id="senderEmail" placeholder="Your Email" required />
+        <textarea rows="4" id="senderMsg" placeholder="Write your message here..." required></textarea>
+        <button type="submit" class="btn btn-primary full-width">Send Email</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
